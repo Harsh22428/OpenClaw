@@ -2,9 +2,6 @@ services:
   - type: web
     name: openclaw
     runtime: docker
-    repo: https://github.com/Harsh22428/OpenClaw
-    dockerfilePath: ./Dockerfile
-    plan: standard
     healthCheckPath: /health
     envVars:
       - key: PORT
